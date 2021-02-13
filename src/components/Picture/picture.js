@@ -4,9 +4,8 @@ import {
 } from 'react-native'
 
 import estilo from './styles'
-import {likePic,getPicLike} from '../../api/likes'
 
-const Picture = ({urlPic, description, likeLength }) => {
+const Picture = ({urlPic, description, likeLength, likePic, getPicLike }) => {
   const [liked, setLiked] = useState(false)
   const [likes, setLikes] = useState(likeLength)
 
